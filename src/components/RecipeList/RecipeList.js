@@ -1,17 +1,17 @@
 import { Recipe } from "components/Reciepe/Recipe";
 import PropTypes from 'prop-types';
-
+import { List } from "./RecipeList.styled";
 
 
 
 export const RecipeList = ({recipes}) => {
     return (
-        <ul>
+        <List>
             {recipes.map(recipe =>
                 <li key={recipe.id}>
                     <Recipe recipe={recipe}/>
                 </li>)}
-        </ul>
+        </List>
     )
 };
 
